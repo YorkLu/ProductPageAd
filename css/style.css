@@ -1,26 +1,35 @@
 html,body{
-    width: 100%;
     height: 100%;
     overflow: hidden;
     margin: 0;
+    padding: 0;
 }
 
+/*单品页iframe*/
 .productPage{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: -999;
 }
 
+/*毛玻璃*/
+.blue{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+}
 
-
+/*遮罩*/
 .shade{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
     left: 0;
     top: 0;
     z-index: 1;
@@ -30,11 +39,153 @@ html,body{
 .popup{
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
 }
 
+/*弹窗卡片*/
 .popup-bg{
     width: 80%;
-    height: 240px;
     background: white;
     margin: auto;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px 0 rgba(0,0,0,0.20);
 }
+
+/*弹窗内容*/
+.popup-content{
+    padding: 20px 24px 12px;
+    overflow: hidden;
+    box-sizing:border-box;
+}
+
+.img-gift{
+    width: 200px;
+    height: auto;
+    margin-bottom: -7px;
+    margin-top: -160px;
+}
+
+.popup-content p{
+    line-height: 1.2;
+    margin-block-start: 4px;
+    margin-block-end: 4px;
+    font-size: 14px;
+    color: #444;
+    text-align: left;
+}
+
+.guide-info{
+    margin-top: 12px;
+    display: table;
+    width: 100%;
+}
+
+.guide-info img{
+    height: 56px;
+    display: table-cell;
+}
+
+.guide-info p{
+    display: table-cell;
+    font-size: small;
+    padding-left: 12px;
+    height: 56px;
+    vertical-align: middle;
+    color: #686868;
+}
+
+.btn-list{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.btn-list button:nth-child(2){
+    margin-left: 6px;
+}
+
+.btn-qrcode,.btn-wechat-id{
+    width: calc(50% - 6px);
+}
+
+.btn-open-wechat{
+    margin-top: 8px !important;
+    width: 100%;
+}
+
+.weui-toast_content{
+    font-size: 12px;
+    padding: 0px 4px 4px;
+}
+
+/*buttons.css内容*/
+.button {
+    color: #666;
+    background-color: #EEE;
+    border-color: #EEE;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 32px;
+    height: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+    display: inline-block;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.button:visited {
+    color: #666; }
+.button:hover, .button:focus {
+    background-color: #f6f6f6;
+    text-decoration: none;
+    outline: none; }
+.button:active, .button.active, .button.is-active {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    background-color: #eeeeee;
+    border-color: #cfcfcf;
+    color: #d4d4d4;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); }
+.button.disabled, .button.is-disabled, .button:disabled {
+    top: 0 !important;
+    background: #EEE !important;
+    border: 1px solid #DDD !important;
+    text-shadow: 0 1px 1px white !important;
+    color: #CCC !important;
+    cursor: default !important;
+    appearance: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    opacity: .8 !important; }
+.button-action,
+.button-action-flat {
+    background-color: #A5DE37;
+    border-color: #A5DE37;
+    color: #FFF; }
+.button-action:visited,
+.button-action-flat:visited {
+    color: #FFF; }
+.button-action:hover, .button-action:focus,
+.button-action-flat:hover,
+.button-action-flat:focus {
+    background-color: #b9e563;
+    border-color: #b9e563;
+    color: #FFF; }
+.button-action:active, .button-action.active, .button-action.is-active,
+.button-action-flat:active,
+.button-action-flat.active,
+.button-action-flat.is-active {
+    background-color: #a1d243;
+    border-color: #a1d243;
+    color: #8bc220; }
