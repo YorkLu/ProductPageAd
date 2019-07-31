@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
     <link rel="stylesheet" href="css/style.css?v=20190730">
 </head>
-<body>
-<iframe src="http://wx.10086.cn/website/businessPlatform/shopDetail?productId=1477&productCode=1242453"
-        class="productPage blue" frameborder="0" scrolling="no"></iframe>
+<body onload="loadFrame()">
+<!--<iframe src="http://wx.10086.cn/website/businessPlatform/shopDetail?productId=584&productCode=12676476"-->
+        <!--class="productPage blur" frameborder="0" scrolling="no"></iframe>-->
 <div class="shade">
     <div class="popup">
         <img src="img/img-gift.png" class="img-gift">
@@ -26,19 +26,22 @@
                     <p class="float-left">截图保存二维码，在微信打开扫一扫，右上角相册中选择图片识别</p>
                 </div>
                 <div class="btn-list">
-                    <a type="button" href="img/img-qrcode.png" download="img-qrcode.png" class="button btn-qrcode">保存二维码</a>
-                    <button type="button" class="button btn-wechat-id" data-clipboard-text="cmcckf10086">复制微信号</button>
-                    <button type="button" class="button btn-open-wechat button-action" data-clipboard-text="cmcckf10086">打开微信</button>
+                    <a type="button" href="img/img-qrcode.png" download="img-qrcode.png"
+                       class="button btn-qrcode">保存二维码</a>
+                    <a type="button" class="button btn-wechat-id" data-clipboard-text="cmcckf10086">复制微信号</a>
+                    <button type="button" class="button btn-open-wechat button-action"
+                            data-clipboard-text="cmcckf10086">打开微信
+                    </button>
                 </div>
-
             </div>
         </div>
+        <img src="img/icon-close.svg" class="icon-close">
     </div>
 </div>
 <!--script-->
 <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
 <script src="js/clipboard.min.js"></script>
-<script src="js/script.js?v=20190730"></script>
+<script src="js/script.js?v=20190731"></script>
 </body>
 </html>
