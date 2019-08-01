@@ -1,0 +1,35 @@
+body{
+    margin-bottom: 24px;
+}
+
+/*bootstrap modified*/
+.no-padding{
+    padding: 0;
+}
+
+.msg{
+    margin: 0px 24px;
+}
+
+.msg+.msg{
+    margin-top: 24px;
+}
+
+.msg-content{
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.msg-left{
+    background: #eee;
+}
+
+.msg-right{
+    background: #A0E75A;
+}
+
+.msg-content p{
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 0px;
+}
