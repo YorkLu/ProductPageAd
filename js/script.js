@@ -27,11 +27,12 @@ function loadFrame(isShade) {
     var secondChannel = GetURLString("secondChannel");
     var pageid = GetURLString("pageid");
     var url = "";
-    if (!productId) {
-        url = "http://wx.10086.cn/website/businessPlatform/universalShop";
-        console.log(url);
-    }
-    else if (productCode) {
+    // if (!productId) {
+    //     url = "http://wx.10086.cn/website/businessPlatform/universalShop";
+    //     console.log(url);
+    // }
+    // 原本下面是else if
+    if (productCode) {
         url = "http://wx.10086.cn/website/businessPlatform/shopDetail?productId=" + productId + "&productCode=" + productCode;
         console.log(url);
     }
