@@ -33,7 +33,7 @@ function loadFrame(isShade) {
     // }
     // 原本下面是else if
     if (productCode) {
-        url = "http://wx.10086.cn/website/businessPlatform/shopDetail?productCode=" + productCode;
+        url = "http://wx.10086.cn/website/businessOnline/shopDetail?productCode=" + productCode;
         console.log(url);
     }
     else {
